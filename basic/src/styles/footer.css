@@ -1,0 +1,17 @@
+.display-message{
+    height: 10%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-top: 2px;
+    text-align: center;
+}
+.title{
+    color:  rgb(60, 138, 60);;
+}
+
+
+

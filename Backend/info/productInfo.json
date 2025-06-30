@@ -1,0 +1,1293 @@
+{
+    "Company Name" :"TapShop" ,
+    "products": [
+        {
+           
+            "product_name": "Free Fire",
+            "product_description": "Garena Free Fire is an online-only action-adventure battle royale game played in third person perspective. Where 50 players are dropped and left to survive on their own. Get Diamonds to buy exclusive items within the game and elevate your experience.",
+            "product_disclaimer": false,
+            "sku_detail": [
+                {
+                   
+                    "sku_name": "Diamonds 13",
+                    "sku_price": 20,
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                   
+                },
+                {
+                 
+                    "sku_name": "Diamonds 35",
+                    "sku_price": 50,
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+
+                },
+                {
+                    "sku_name": "Diamonds 70",
+                    "sku_price": 100,
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+                    "sku_name": "Diamonds 140",
+                    "sku_price": 200,
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+                    "sku_name": "Diamonds 355",
+                    "sku_price": 500,
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+                    "sku_name": "Diamonds 713",
+                    "sku_price": 1000,
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+                    "sku_name": "Diamonds 1426",
+                    "sku_price": 2000,
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                }
+            ]
+        },
+        {
+           
+            "product_name": "PUBG Mobile",
+            "product_description": "PUBG Mobile UC (Unknown Cash) is the in-game currency of PUBG Mobile. It can be used to purchase in-game items such as different weapons skins, clothes, parachutes, crates for their characters. Making the game more personalized and enjoyable.",
+            "product_disclaimer": false,
+            "product_disclaimermsg": null,
+            "sku_detail": [
+                {
+        
+                    "sku_name": "PUBG Mobile 60UC",
+                    
+                    "sku_price": 255,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 0
+                },
+                {
+        
+                    "sku_name": "PUBG Mobile 325UC",
+                    
+                    "sku_price": 1251,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "PUBG Mobile 660UC",
+                    
+                    "sku_price": 2550,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "PUBG Mobile 1800UC",
+                    
+                    "sku_price": 6380,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "PUBG Mobile 3850UC",
+                    
+                    "sku_price": 12770,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "PUBG Mobile 8100UC",
+                    
+                    "sku_price": 25750,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                }
+            ]
+        },
+        {
+            "payNow": true,
+
+            "product_name": "Teen Patti",
+            "product_description": "Teen Patti is an exciting and popular card game, often referred to as Indian Poker, offering fast-paced action and thrilling gameplay. Perfect for players seeking the ultimate card experience, it features multiple variations like Classic, Joker, and AK47, with the chance to win big rewards. Enjoy Teen Patti online with friends or against real players, and experience the fun, strategy, and luck all in one game!",
+            "product_disclaimer": false,
+            "product_disclaimermsg": null,
+            "sku_detail": [
+                {
+        
+                    "sku_name": "16L Chips Pack",
+                    
+                    "sku_price": 51,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "45L Chips Pack",
+                    
+                    "sku_price": 125,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "1 Cr Chips Pack",
+                    
+                    "sku_price": 250,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "3.3 Cr Chips Pack",
+                    
+                    "sku_price": 560,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "7.5 Cr Chips Pack",
+                    
+                    "sku_price": 1120,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Gold Pass",
+                    
+                    "sku_price": 1469,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "16 Cr Chips Pack",
+                    
+                    "sku_price": 2149,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "51 Cr Chips Pack",
+                    
+                    "sku_price": 6499,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "125 Cr Chips Pack",
+                    
+                    "sku_price": 17000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "250 Cr Chips Pack",
+                    
+                    "sku_price": 33000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "500 Cr Chips Pack",
+                    
+                    "sku_price": 67000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                }
+            ]
+        },
+        {
+            "payNow": true,
+
+            "product_name": "EA SPORTS FC Mobile",
+            "product_description": "EA Sports FC™ Mobile brings the excitement of football to your phone with realistic graphics and intuitive gameplay. Build your dream squad and compete in modes like Career, Tournaments, and Online Multiplayer. Enjoy regular updates with fresh content, including player transfers and events. Test your skills in fast-paced, strategic matches. Lace up and dominate the field today!",
+            "product_disclaimer": false,
+            "product_disclaimermsg": null,
+            "sku_detail": [
+                {
+        
+                    "sku_name": "40 FC POINTS",
+                    
+                    "sku_price": 99,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "39 Silver",
+                    
+                    "sku_price": 99,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "100 FC POINTS",
+                    
+                    "sku_price": 259,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "99 Silver",
+                    
+                    "sku_price": 259,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "520 FC POINTS",
+                    
+                    "sku_price": 1299,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "499 Silver",
+                    
+                    "sku_price": 1299,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "1070 FC POINTS",
+                    
+                    "sku_price": 2599,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "999 Silver",
+                    
+                    "sku_price": 2599,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "2200 FC POINTS",
+                    
+                    "sku_price": 5199,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "1999 Silver",
+                    
+                    "sku_price": 5199,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "5750 FC POINTS",
+                    
+                    "sku_price": 12999,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "4999 Silver",
+                    
+                    "sku_price": 12999,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "12000 FC POINTS",
+                    
+                    "sku_price": 25989,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "9999 Silver",
+                    
+                    "sku_price": 25989,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                }
+            ]
+        },
+        {
+            "payNow": true,
+
+            "product_name": "Arena Breakout",
+            "product_description": "Featuring a deadly open world called the Dark Zone, Arena Breakout gives players the freedom to play however they desire - whether it’s sneaking around or taking out enemies head-on. Defeating opponents isn’t the only way to win: the goal is to search for supplies and successfully break out.",
+            "product_disclaimer": false,
+            "product_disclaimermsg": null,
+            "sku_detail": [
+                {
+        
+                    "sku_name": "Arena Breakout 60 Bonds",
+                    
+                    "sku_price": 269,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Arena Breakout 1580 Bonds",
+                    
+                    "sku_price": 6740,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Arena Breakout 3200 Bonds",
+                    
+                    "sku_price": 13490,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                }
+            ]
+        },
+        {
+            "payNow": true,
+
+            "product_name": "Nintendo",
+            "product_description": "Nintendo is a powerhouse in the gaming world, bringing legendary characters like Mario, Zelda, and Pikachu to life! From the Game Boy to the Switch, Nintendo consoles deliver epic adventures that unite players of all ages for endless fun and excitement. Get ready to level up your gaming experience!",
+            "product_disclaimer": true,
+            "product_disclaimermsg": "Please note that this voucher is only redeemable for accounts that are set up in the US Region. This code will not work for any accounts set up in a different region.",
+            "sku_detail": [
+                {
+        
+                    "sku_name": "Nintendo eShop Gift Card - US 10$",
+                    
+                    "sku_price": 2740,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Nintendo eShop Gift Card - US 20$",
+                    
+                    "sku_price": 5390,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Nintendo eShop Gift Card - US 35$",
+                    
+                    "sku_price": 9790,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Nintendo eShop Gift Card - US 50$",
+                    
+                    "sku_price": 13950,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                }
+            ]
+        },
+        {
+            "payNow": true,
+
+            "product_name": "Yalla Ludo",
+            "product_description": "Yalla Ludo offers a multiplayer experience, allowing you to play with friends or other players from around the globe. The game provides a platform for connecting and competing with friends and strangers in real-time. You can invite your friends to join a game or join public rooms to play with random opponents.",
+            "product_disclaimer": true,
+            "product_disclaimermsg": "Please note that this voucher is only redeemable for accounts that are set up in the mentioned country.US codes will only work for accounts set up in the United States. This code will not work for Pakistani accounts. Refund claims will not be entertained for users attempting to use the code for a Pakistani account",
+            "sku_detail": [
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 2 Diamonds (INT)",
+                    
+                    "sku_price": 575,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 2 Gold (INT)",
+                    
+                    "sku_price": 585,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 5 Diamonds (INT)",
+                    
+                    "sku_price": 1430,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 5 Gold (INT)",
+                    
+                    "sku_price": 1450,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 10 Diamonds (INT)",
+                    
+                    "sku_price": 2870,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 10 Gold (INT)",
+                    
+                    "sku_price": 2900,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 25 Diamonds (INT)",
+                    
+                    "sku_price": 7200,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 25 Gold (INT)",
+                    
+                    "sku_price": 7250,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 50 Diamonds (INT)",
+                    
+                    "sku_price": 14400,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 50 Gold (INT)",
+                    
+                    "sku_price": 14500,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 100 Diamonds (INT)",
+                    
+                    "sku_price": 28800,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 100 Gold (INT)",
+                    
+                    "sku_price": 28999,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 300 Diamonds (INT)",
+                    
+                    "sku_price": 86500,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 300 Gold (INT)",
+                    
+                    "sku_price": 86999,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 500 Diamonds (INT)",
+                    
+                    "sku_price": 144000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Yalla Ludo - USD 500 Gold (INT)",
+                    
+                    "sku_price": 144999,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                }
+            ]
+        },
+        {
+            "payNow": true,
+
+            "product_name": "Crunchyroll",
+            "product_description": "With Crunchyroll, you can stream the world's largest anime library. Watch over 1,000 titles, including new episodes fresh from Japan, critically acclaimed Crunchyroll Originals, and your favorite anime shows.",
+            "product_disclaimer": false,
+            "product_disclaimermsg": null,
+            "sku_detail": [
+                {
+        
+                    "sku_name": "Crunchyroll 3 Months",
+                    
+                    "sku_price": 6907,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "Crunchyroll 12 Months",
+                    
+                    "sku_price": 24024,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                }
+            ]
+        },
+        {
+            "payNow": true,
+
+            "product_name": "iTunes",
+            "product_description": "Redeem iTunes Gift Cards or add money directly into your Apple account balance anytime. It can be used to pay for Apple products, accessories, apps, games, music, movies, shows, iCloud, you name it.Open your Account and tap Redeem Code to avail your voucher.",
+            "product_disclaimer": true,
+            "product_disclaimermsg": "Please note that this voucher is only redeemable for accounts that are set up in the US Region. This code will not work for any accounts set up in a different region.",
+            "sku_detail": [
+                {
+        
+                    "sku_name": "iTunes Gift Card 2$",
+                    
+                    "sku_price": 585,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    },
+                {
+        
+                    "sku_name": "iTunes Gift Card 3$",
+                    
+                    "sku_price": 870,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 4$",
+                    
+                    "sku_price": 1150,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 5$",
+                    
+                    "sku_price": 1440,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    },
+                {
+        
+                    "sku_name": "iTunes Gift Card 6$",
+                    
+                    "sku_price": 1795,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 7$",
+                    
+                    "sku_price": 2080,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 8$",
+                    
+                    "sku_price": 2390,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 9$",
+                    
+                    "sku_price": 2595,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 10$",
+                    
+                    "sku_price": 2873,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 15$",
+                    
+                    "sku_price": 4310,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 20$",
+                    
+                    "sku_price": 5744,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 25$",
+                    
+                    "sku_price": 7184,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 30$",
+                    
+                    "sku_price": 8620,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 35$",
+                    
+                    "sku_price": 10100,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 40$",
+                    
+                    "sku_price": 11495,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 50$",
+                    
+                    "sku_price": 14369,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 60$",
+                    
+                    "sku_price": 17245,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 70$",
+                    
+                    "sku_price": 21131,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 75$",
+                    
+                    "sku_price": 22642,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 80$",
+                    
+                    "sku_price": 24150,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 90$",
+                    
+                    "sku_price": 27169,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 100$",
+                    
+                    "sku_price": 30000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 150$",
+                    
+                    "sku_price": 45000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 200$",
+                    
+                    "sku_price": 60000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 250$",
+                    
+                    "sku_price": 75000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 300$",
+                    
+                    "sku_price": 90000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 350$",
+                    
+                    "sku_price": 105000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 400$",
+                    
+                    "sku_price": 120000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 450$",
+                    
+                    "sku_price": 135000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                },
+                {
+        
+                    "sku_name": "iTunes Gift Card 500$",
+                    
+                    "sku_price": 150000,
+    
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                }
+            ]
+        },
+        {
+            "payNow": false,
+
+            "product_name": "Mobile Legends",
+            "product_description": "Mobile Legends is a 5v5 MOBA for handheld devices that offers a variety of playable heroes, modes, intense, and fast-paced gameplay. Purchase diamonds for Mobile Legends and get set up to play a match against other players in real time.",
+            "product_disclaimer": false,
+            "product_disclaimermsg": null,
+            "sku_detail": [
+                {
+        
+                    "sku_name": "Mobile Legends 56 Diamond",
+                    
+                    "sku_price": 339,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    },
+                {
+        
+                    "sku_name": "Mobile Legends 278 Diamond",
+                    
+                    "sku_price": 1455,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    }
+            ]
+        },
+        {
+            "payNow": false,
+
+            "product_name": "Razer Gold",
+            "product_description": "Razer Gold is the unified virtual credits for gamers worldwide. Use Razer Gold to buy games and in-game content to get more bang for your money, including getting rewarded with Razer Silver and exclusive game deals.",
+            "product_disclaimer": true,
+            "product_disclaimermsg": "Please note that this voucher is only redeemable for accounts that are set up in the US Region. This code will not work for any accounts set up in a different region.",
+            "sku_detail": [
+                {
+        
+                    "sku_name": "Razer Gold 5$ ",
+                    
+                    "sku_price": 1450,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    },
+                {
+        
+                    "sku_name": "Razer Gold 10$",
+                    
+                    "sku_price": 2900,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    },
+                {
+        
+                    "sku_name": "Razer Gold 20$",
+                    
+                    "sku_price": 5850,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    }
+            ]
+        },
+        {
+            "payNow": true,
+
+            "product_name": "Playstation",
+            "product_description": "Enjoy PlayStation content with convenient PlayStation Store Cash Cards, which let you purchase downloadable games, game add-ons, and PlayStation Plus subscriptions.",
+            "product_disclaimer": true,
+            "product_disclaimermsg": "Please note that this voucher is only redeemable for accounts that are set up in the US Region. This code will not work for any accounts set up in a different region.",
+            "sku_detail": [
+                {
+        
+                    "sku_name": "Playstation PSN Card 10$",
+                    
+                    "sku_price": 2750,
+   
+                    "sku_region": "US",
+                    "sku_status": 1
+  
+                },
+                {
+        
+                    "sku_name": "Playstation PSN Card 25$",
+                    
+                    "sku_price": 7000,
+   
+                    "sku_region": "US",
+                    "sku_status": 1
+  
+                },
+                {
+        
+                    "sku_name": "PlayStation Store US $50",
+                    
+                    "sku_price": 14050,
+    
+                    "sku_region": "US",
+                    "sku_status": 1
+  
+                },
+                {
+        
+                    "sku_name": "PlayStation Store US $75",
+                    
+                    "sku_price": 20999,
+    
+                    "sku_region": "US",
+                    "sku_status": 1
+  
+                }
+            ]
+        },
+        {
+            "payNow": false,
+
+            "product_name": "Xbox Live",
+            "product_description": "Through Xbox Live, subscribers can connect with other users on the platform for multiplayer games and social networking. Purchase an Xbox Live Gift Card or Game Pass and experience the Xbox 360 gaming platform live.",
+            "product_disclaimer": true,
+            "product_disclaimermsg": "Please note that this voucher is only redeemable for accounts that are set up in the US Region. This code will not work for any accounts set up in a different region.",
+            "sku_detail": [
+                {
+        
+                    "sku_name": "Xbox Gift Card 5$ Wallet",
+                    
+                    "sku_price": 1430,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    },
+                {
+        
+                    "sku_name": "Xbox Live Gift Card 10$ Wallet ",
+                    
+                    "sku_price": 2780,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    },
+                {
+        
+                    "sku_name": "Xbox Live Gift Card 15$ Wallet ",
+                    
+                    "sku_price": 4170,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    },
+                {
+        
+                    "sku_name": "Xbox Live Gift Card 20$ Wallet ",
+                    
+                    "sku_price": 5530,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    },
+                {
+        
+                    "sku_name": "Xbox Live Gift Card 25$ Wallet ",
+                    
+                    "sku_price": 6915,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    }
+            ]
+        },
+        {
+            "payNow": false,
+
+            "product_name": "Valorant",
+            "product_description": "Riot Gift Cards are the most reliable way to buy in-game currency where you don't even need a credit/debit card. Riot Gift Card codes can be received digitally via e-mail, or they can be activated by entering the pin code, which will be instantly reflected in your account.",
+            "product_disclaimer": true,
+            "product_disclaimermsg": "Please note that this voucher is only redeemable for accounts that are set up in the Turkey for (Valorant 150 VP) and US for (Riot Access 5$) Region. Refund claims will not be entertained for users attempting to use the code for a Pakistani account.",
+            "sku_detail": [
+                {
+        
+                    "sku_name": "Riot Access 5$",
+                    
+                    "sku_price": 1640,
+   
+                    "sku_region": "GLOBAL",
+                    "sku_status": 1
+                    }
+            ]
+        }
+    ],
+     "knowledge_base": [
+    {
+      "category": "Greeting Support",
+      "trigger_examples": ["Hi", "Hey", "Hello", "How are you?"],
+      "responses": [
+        "Hey there! How can I assist you  today?",
+        "Hello! I’m here if you have any questions about our digital products."
+      ]
+    },
+    {
+      "category": "Goodbye Support",
+      "trigger_examples": ["Bye", "Goodbye", "See you later"],
+      "responses": [
+        "Happy gaming! Come back if you need more help.",
+        "Bye! Remember to check your email for redemption instructions."
+      ]
+    },
+    {
+      "category": "Thanks & Appreciation",
+      "trigger_examples": ["Thank you", "Appreciate it"],
+      "responses": [
+        "You're welcome! Let me know if you need anything else."
+      ]
+    },
+    {
+      "category": "Available Products",
+      "details": {
+        "Entertainment": ["iTunes", "Spotify", "Crunchyroll", "Tapmad", "Yalla Ludo"],
+        "Gaming": ["Xbox", "PlayStation", "Steam", "Nintendo", "Valorant RP", "Razer Gold", "Arena Breakout"],
+        "Mobile Games": ["PUBG Mobile", "Free Fire", "Mobile Legends", "Teen Patti", "EA SPORTS FC Mobile"]
+      }
+    },
+    {
+      "category": "PUBG Mobile UC Redemption Guide",
+      "steps": [
+        "Visit pubgmobile.com/redeem",
+        "Log in with your Character ID",
+        "Enter the voucher code and confirm",
+        "UC will be delivered to your in-game mail"
+      ],
+      "note": "Character ID ≠ Game ID",
+      "supported_regions": ["Pakistan"]
+    },
+    {
+      "category": "Free Fire Diamond Redemption",
+      "steps": [
+        "Go to reward.ff.garena.com/en",
+        "Log in with Facebook or Google",
+        "Enter the voucher code and confirm",
+        "Diamonds will be delivered in-game"
+      ],
+      "supported_regions": ["India", "Pakistan", "China"]
+    },
+    {
+      "category": "Spotify Gift Card Redemption",
+      "steps": [
+        "Go to spotify.com/redeem",
+        "Log in or create a Spotify account",
+        "Enter your 12-digit code",
+        "Complete captcha and enjoy Premium"
+      ]
+    },
+    {
+      "category": "Xbox Live Gift Card Redemption",
+      "steps": [
+        "Visit account.microsoft.com/billing/redeem",
+        "Sign in to your Microsoft account",
+        "Enter the 25-character code (no dashes)",
+        "Click Redeem to apply to your balance"
+      ]
+    },
+    {
+      "category": "PlayStation Network (PSN) Code",
+      "steps": [
+        "On your PS5/PS4, go to PlayStation Store > [⋯] > Redeem Code",
+        "Enter the 12-digit code",
+        "Confirm to add funds instantly"
+      ]
+    },
+    {
+      "category": "Steam Wallet Code Redemption",
+      "steps": [
+        "Visit store.steampowered.com/account/redeemwalletcode",
+        "Enter your 15-digit code (XXXXX-XXXXX-XXXXX)",
+        "Click Continue"
+      ]
+    },
+    {
+      "category": "Nintendo eShop Code Redemption",
+      "steps": [
+        "On Switch: eShop → 'Enter Code'",
+        "Input 16-digit code (no spaces)",
+        "Confirm and funds will be added"
+      ]
+    },
+    {
+      "category": "Payment Methods Supported",
+      "methods": [
+        "Credit/debit cards (Visa, Mastercard)",
+        "EasyPaisa",
+        "JazzCash",
+        "HBL",
+        "Zindagi",
+        "Onic"
+      ]
+    },
+     {
+      "category": "Platforms where we can buy Vouchers",
+      "methods": [
+        "Tapmad",
+        "EasyPaisa",
+        "JazzCash",
+        "HBL"
+      ]
+    },
+     {
+      "category": "Payment Methods Supported",
+      "methods": [
+        "Credit/debit cards (Visa, Mastercard)",
+        "EasyPaisa",
+        "JazzCash",
+        "HBL",
+        "Zindagi",
+        "Onic"
+      ]
+    },{
+    "category": "How to buy vouchers from EasyPaisa app",
+    "steps": [
+      "Go to the website or app's checkout page.",
+      "Select 'EasyPaisa' as your payment method.",
+      "Enter your mobile number linked with EasyPaisa.",
+      "You will receive a confirmation prompt on your mobile.",
+      "Approve the payment in your EasyPaisa app.",
+      "Once confirmed, your voucher will be delivered by email."
+    ]
+  },
+  {
+    "category": "How to buy vouchers from JazzCash app",
+    "steps": [
+      "Proceed to the checkout page on the website or app.",
+      "Choose 'JazzCash' as your preferred payment option.",
+      "Enter your JazzCash mobile number.",
+      "Approve the transaction via JazzCash app or USSD code.",
+      "Wait for confirmation and check your email for the voucher code."
+    ]
+  },
+  {
+    "category": "How to buy vouchers from HBL app",
+    "steps": [
+      "At checkout, select 'HBL' as your bank/payment method.",
+      "You’ll be redirected to the HBL payment gateway.",
+      "Log in using your HBL credentials.",
+      "Verify the payment using OTP or app confirmation.",
+      "On successful payment, you’ll receive the voucher in your email."
+    ]
+  },
+  {
+    "category": "How to buy vouchers from Tapmad app/website ",
+    "steps": [
+      "Visit the Tapmad page or authorized vendor website.",
+      "Choose your Tapmad subscription plan.",
+      "Proceed to payment and choose your method (EasyPaisa, JazzCash, Card, etc.).",
+      "Complete the payment based on selected method.",
+      "Once payment is successful, your Tapmad code will be emailed to you or displayed on-screen."
+    ]
+  },
+
+    {
+      "category": "Delivery Time",
+      "info": "Digital codes are delivered by email within 1–5 minutes of payment confirmation."
+    },
+    {
+      "category": "Redemption Help",
+      "info": "Ask about any specific platform or gift card for detailed step-by-step instructions."
+    },
+    {
+        "category":"currency",
+        "info": "PKR"
+    },
+    {
+        "category":"SKU_Status",
+        "info": "if 1 mean offer's stock available else stock not available ,and if someone buy this offer so it will deliver when stock is available"
+    },
+    {
+        "category":"SKU",
+        "info": "Different offers that are available for products"
+    },
+    {
+        "category":"SKU_Region",
+        "info": "Tells about the game region"
+    }
+  ]
+}

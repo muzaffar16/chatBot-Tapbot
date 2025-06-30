@@ -1,0 +1,17 @@
+.chat-header{
+    background-color: rgb(20, 18, 18);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    height: 10%;
+}
+.logo .bi-robot{
+    color: white;
+    font-size: 4rem;
+}
+
+.TapShop-logo img{
+    width: 12rem;
+}

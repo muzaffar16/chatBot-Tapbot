@@ -1,0 +1,117 @@
+{
+  "knowledge_base": [
+    {
+      "category": "Greeting Support",
+      "trigger_examples": ["Hi", "Hey", "Hello", "How are you?"],
+      "responses": [
+        "Hey there! How can I assist you with gift cards or top-ups today?",
+        "Hi! Need help choosing a digital gift card or game top-up?",
+        "Hello! I’m here if you have any questions about our digital products."
+      ]
+    },
+    {
+      "category": "Goodbye Support",
+      "trigger_examples": ["Bye", "Goodbye", "See you later"],
+      "responses": [
+        "Happy gaming! Come back if you need more help.",
+        "Bye! Remember to check your email for redemption instructions."
+      ]
+    },
+    {
+      "category": "Thanks & Appreciation",
+      "trigger_examples": ["Thank you", "Appreciate it"],
+      "responses": [
+        "You're welcome! Let me know if you need anything else."
+      ]
+    },
+    {
+      "category": "Available Products",
+      "details": {
+        "Entertainment": ["iTunes", "Spotify", "Crunchyroll", "Tapmad", "Yalla Ludo"],
+        "Gaming": ["Xbox", "PlayStation", "Steam", "Nintendo", "Valorant RP", "Razer Gold", "Arena Breakout"],
+        "Mobile Games": ["PUBG Mobile", "Free Fire", "Mobile Legends", "Teen Patti", "EA SPORTS FC Mobile"]
+      }
+    },
+    {
+      "category": "PUBG Mobile UC Redemption Guide",
+      "steps": [
+        "Visit pubgmobile.com/redeem",
+        "Log in with your Character ID",
+        "Enter the voucher code and confirm",
+        "UC will be delivered to your in-game mail"
+      ],
+      "note": "Character ID ≠ Game ID",
+      "supported_regions": ["Pakistan"]
+    },
+    {
+      "category": "Free Fire Diamond Redemption",
+      "steps": [
+        "Go to reward.ff.garena.com/en",
+        "Log in with Facebook or Google",
+        "Enter the voucher code and confirm",
+        "Diamonds will be delivered in-game"
+      ],
+      "supported_regions": ["India", "Pakistan", "China"]
+    },
+    {
+      "category": "Spotify Gift Card Redemption",
+      "steps": [
+        "Go to spotify.com/redeem",
+        "Log in or create a Spotify account",
+        "Enter your 12-digit code",
+        "Complete captcha and enjoy Premium"
+      ]
+    },
+    {
+      "category": "Xbox Live Gift Card Redemption",
+      "steps": [
+        "Visit account.microsoft.com/billing/redeem",
+        "Sign in to your Microsoft account",
+        "Enter the 25-character code (no dashes)",
+        "Click Redeem to apply to your balance"
+      ]
+    },
+    {
+      "category": "PlayStation Network (PSN) Code",
+      "steps": [
+        "On your PS5/PS4, go to PlayStation Store > [⋯] > Redeem Code",
+        "Enter the 12-digit code",
+        "Confirm to add funds instantly"
+      ]
+    },
+    {
+      "category": "Steam Wallet Code Redemption",
+      "steps": [
+        "Visit store.steampowered.com/account/redeemwalletcode",
+        "Enter your 15-digit code (XXXXX-XXXXX-XXXXX)",
+        "Click Continue"
+      ]
+    },
+    {
+      "category": "Nintendo eShop Code Redemption",
+      "steps": [
+        "On Switch: eShop → 'Enter Code'",
+        "Input 16-digit code (no spaces)",
+        "Confirm and funds will be added"
+      ]
+    },
+    {
+      "category": "Payment Methods Supported",
+      "methods": [
+        "Credit/debit cards (Visa, Mastercard)",
+        "PayPal",
+        "Mobile Payments",
+        "Bank Transfers",
+        "Cryptocurrency (in selected regions)"
+      ]
+    },
+    {
+      "category": "Delivery Time",
+      "info": "Digital codes are delivered by email within 1–5 minutes of payment confirmation."
+    },
+    {
+      "category": "Redemption Help",
+      "info": "Ask about any specific platform or gift card for detailed step-by-step instructions."
+    }
+  ]
+}

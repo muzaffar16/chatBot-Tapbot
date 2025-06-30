@@ -1,0 +1,59 @@
+/* Floating launcher button */
+.chat-launcher {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgb(60, 138, 60);
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  z-index: 9998;
+}
+
+/* Popup box */
+.popup-box {
+  position: fixed;
+  bottom: 90px;          /* leave space for launcher */
+  right: 30px;
+     height: 36rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Popup header */
+.popup-header {
+  background: rgb(60, 138, 60);
+  color: #fff;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-weight: 600; */
+}
+
+.popup-close {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Let mainpg's .widget stretch */
+.popup-box .widget {
+  flex: 1;
+  overflow-y: auto;
+}
