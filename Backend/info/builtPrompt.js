@@ -1,11 +1,10 @@
-const fs = require('fs/promises');
+// const fs = require('fs/promises');
 const path = require('path');
 
-async function buildPrompt({ KB_TEXT, historyText, message }) {
+async function buildPrompt({ KB_TEXT, historyText, message,promptText }) {
   try {
-    const templatePath = path.join( __dirname,'prompt.txt');
-    let promptText = await fs.readFile(templatePath, 'utf8');
-    console.log(templatePath)
+    // console.log("info file  ",KB_TEXT)
+    // console.log("prompt file  ",promptText)
     // Replace placeholders
     promptText = promptText
       .replace('{{KB_TEXT}}', KB_TEXT)

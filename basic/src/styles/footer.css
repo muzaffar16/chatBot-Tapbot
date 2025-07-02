@@ -1,7 +1,13 @@
+:root {
+  --bot-bg: #3a8d3a;       /* green */
+  --bot-body: #2e7d32;     /*black*/
+  --bot-accent: #ffffff;   /* white*/
+}
+
 .display-message{
     height: 10%;
-    background-color: black;
-    color: white;
+    background-color: var(--bot-body);
+    color:  var(--bot-accent);
     font-weight: bold;
     font-size: larger;
     padding: 1rem;
@@ -10,7 +16,7 @@
     text-align: center;
 }
 .title{
-    color:  rgb(60, 138, 60);;
+    color: var(--bot-bg);
 }
 
 

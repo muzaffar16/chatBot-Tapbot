@@ -3,6 +3,6 @@ const { HandleGeminiResponce } = require('../controller/botController')
 
 const router=express.Router()
 
-router.post('/',HandleGeminiResponce)
+router.post('/:website',HandleGeminiResponce)
 
 module.exports= router

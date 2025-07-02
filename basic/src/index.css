@@ -1,0 +1,15 @@
+/* :root {
+  --bot-bg: #ffffff;
+  --bot-accent: #000000;
+  --bot-font: #000000;
+}
+
+body {
+  background-color: var(--bot-bg);
+  color: var(--bot-font);
+}
+
+button {
+  background-color: var(--bot-accent);
+  color: var(--bot-font);
+} */

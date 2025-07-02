@@ -1,5 +1,11 @@
+:root {
+  --bot-bg: #3a8d3a;       /* green */
+  --bot-body: #2e7d32;     /*black*/
+  --bot-accent: #ffffff;   /* white*/
+}
+
 .chat-header{
-    background-color: rgb(20, 18, 18);
+    background-color: var(--bot-body);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,7 +14,7 @@
     height: 10%;
 }
 .logo .bi-robot{
-    color: white;
+    color: var(--bot-accent);
     font-size: 4rem;
 }
 

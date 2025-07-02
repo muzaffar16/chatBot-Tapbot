@@ -1,12 +1,18 @@
+:root {
+  --bot-bg: #3a8d3a;       /* green */
+  --bot-body: #2e7d32;     /*black*/
+  --bot-accent: #ffffff;   /* white*/
+}
+
 .complain {
   margin: 6px ;
   width: 23rem;
-  height: 60vh;
+  height: 32rem;
   border-radius: 1.5rem;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(145deg, #3c8a3c, #367c36);
+  background: var(--bot-bg);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
@@ -17,8 +23,8 @@
   border-radius: 1rem;
   flex: 1;
   overflow-y: auto;
-  background: #0a0a0a;
-  color: #d4ffd4;
+  background: var(--bot-body);
+  color: var(--bot-accent);
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -29,7 +35,7 @@
   max-height: 100%;
   overflow-y: auto;
   padding-right: 0.5rem;
-  color: #fff;
+  color: var(--bot-accent);
 }
 
 /* Scrollbar */
@@ -37,11 +43,11 @@
   width: 6px;
 }
 .complain-form::-webkit-scrollbar-thumb {
-  background-color: #4CAF50;
+  background-color: var(--bot-bg);
   border-radius: 4px;
 }
 .complain-form::-webkit-scrollbar-thumb:hover {
-  background-color: #388e3c;
+  background-color: var(--bot-bg);
 }
 
 /* Input group */
@@ -55,7 +61,7 @@
   margin: 0;
   font-weight: 500;
   font-size: 0.95rem;
-  color: #9ff29f;
+  color: var(--bot-accent);
 }
 
 .input-group input,
@@ -64,7 +70,7 @@
   border-radius: 0.4rem;
   border: 1px solid #333;
   background-color: #222;
-  color: white;
+  color: var(--bot-accent);
   width: 100%;
   box-sizing: border-box;
   font-size: 0.9rem;
@@ -73,7 +79,7 @@
 
 .input-group input:focus,
 .input-group textarea:focus {
-  border-color: #4CAF50;
+  border-color:var(--bot-bg);
   outline: none;
 }
 
@@ -83,7 +89,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  color: #e8ffe8;
+  color: var(--bot-accent);
   font-weight: 600;
   text-align: center;
 }
@@ -93,23 +99,23 @@
   height: 110px;
   border-radius: 0.5rem;
   object-fit: cover;
-  border: 2px dashed #4CAF50;
+  border: 2px dashed var(--bot-bg);
   cursor: pointer;
-  background: #fff;
+  background: var(--bot-accent);
   transition: 0.3s;
 }
 
 .preview-img:hover {
   transform: scale(1.03);
-  border-color: #66ff66;
+  border-color: var(--bot-bg);
 }
 
 /* Submit button */
 .submit-btn {
   margin-top: 1rem;
   padding: 0.75rem;
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--bot-bg);
+  color: var(--bot-accent);
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -119,7 +125,7 @@
 }
 
 .submit-btn:hover {
-  background-color: #45a049;
+  background-color: var(--bot-bg);
   transform: translateY(-2px);
 }
 

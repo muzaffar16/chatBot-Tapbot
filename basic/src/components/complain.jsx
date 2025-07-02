@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import '../styles/complain.css';
@@ -26,7 +26,7 @@ const initialErrors = {
   attachment: ''
 };
 
-const Complain = ({ isPopup = false, onClose }) => {
+const Complain = ({ isPopup = false, onClose, web_data }) => {
   const navigate = useNavigate();
   const [image, setImage] = useState(null);
   const [formData, setFormData] = useState({
@@ -36,6 +36,14 @@ const Complain = ({ isPopup = false, onClose }) => {
     message: ''
   });
   const [errors, setErrors] = useState(initialErrors);
+
+  useEffect(() => {
+    if (web_data) {
+      document.documentElement.style.setProperty('--bot-bg', web_data.bg_color_code || '#3a8d3a');
+      document.documentElement.style.setProperty('--bot-body', web_data.body_color_code || '#2e7d32');
+      document.documentElement.style.setProperty('--bot-accent', web_data.accent_color || '#ffffff');
+    }
+  }, [web_data]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -111,15 +119,15 @@ const Complain = ({ isPopup = false, onClose }) => {
         alert('Complaint submitted successfully!');
         setFormData({ order_id: '', mobile_number: '', email: '', message: '' });
         setImage(null);
-        
+
         //redirect to mainpg
 
-           if (isPopup && typeof onClose === 'function') {
-        onClose(); // close the popup
-      } else {
-        navigate('/mainpg'); // navigate to Mainpg
-      }
-    
+        if (isPopup && typeof onClose === 'function') {
+          onClose(); // close the popup
+        } else {
+          navigate('/mainpg'); // navigate to Mainpg
+        }
+
       }
     } catch (err) {
       console.error('Error submitting:', err);
@@ -130,7 +138,7 @@ const Complain = ({ isPopup = false, onClose }) => {
   // ————— Reusable UI Content —————
   const content = (
     <div className="complain">
-      <Header />
+      <Header web_data={web_data} />
       <div className="ComplainBody">
         <form onSubmit={onSubmitHandler} className="complain-form">
 
@@ -185,7 +193,7 @@ const Complain = ({ isPopup = false, onClose }) => {
             />
             {errors.message && <span className="error-msg">{errors.message}</span>}
           </div>
-           <div className="addImg">
+          <div className="addImg">
             <p>Attachment (PDF, PNG, JPG)</p>
             <label htmlFor="image">
               <img
@@ -210,7 +218,7 @@ const Complain = ({ isPopup = false, onClose }) => {
           </button>
         </form>
       </div>
-      <Footer />
+      <Footer web_data={web_data} />
     </div>
   );
 

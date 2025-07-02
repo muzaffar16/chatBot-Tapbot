@@ -1,25 +1,19 @@
+// App.jsx
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Mainpg from './components/mainpg';      // main landing page
-import Bot from './components/bot'; // chat / questions page
-import Complain from './components/complain'
-import Home from './components/home'
+import Mainpg from './components/mainpg';      // full widget with buttons
+import Bot from './components/bot';            // pure chat screen
+import Complain from './components/complain';
+
+
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Home / landing */}
- <Route path="/" element={<Home />} /> 
-
-        <Route path="/main" element={<Mainpg />} />
-
-        {/* Ask Question page */}
-        <Route path="/ask" element={<Bot />} />
-
-        {/* Complain page */}
-        <Route path="/complain" element={<Complain />} />
-
+        <Route path="/:website" element={<Mainpg isPopup={false} />} />
+        <Route path="/bot" element={<Bot isPopup={false} />} />
+        <Route path="/complain" element={<Complain isPopup={false} />} />
       </Routes>
     </BrowserRouter>
   );

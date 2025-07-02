@@ -3,6 +3,7 @@ import Header from './Header';
 import '../styles/bot.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/popup.css';
+import { useEffect } from 'react';
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -18,13 +19,21 @@ const categories = [
 ];
 
 //main body
-const Bot = ({ isPopup = false, onClose }) => {
+const Bot = ({ isPopup = false, onClose, website  , web_data }) => {
   const [query, setQuery] = useState('');
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [sessionId] = useState(() => Date.now().toString());
   const [allowInput, setAllowInput] = useState(false);
   const [showButtons, setShowButtons] = useState(true);
+
+  useEffect(() => {
+  if (web_data) {
+    document.documentElement.style.setProperty('--bot-bg', web_data.bg_color_code || '#3a8d3a');
+    document.documentElement.style.setProperty('--bot-body', web_data.body_color_code || '#2e7d32');
+    document.documentElement.style.setProperty('--bot-accent', web_data.accent_color || '#ffffff');
+  }
+}, [web_data]);
 
   //clean bot message
   const cleanMessage = (text) =>
@@ -63,7 +72,7 @@ const Bot = ({ isPopup = false, onClose }) => {
      
     //send msg to gemeini 
     try {
-      const res = await fetch(`${API_URL}/chat`, {
+      const res = await fetch(`${API_URL}/chat/${website}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: trimmed, sessionId }),
@@ -105,7 +114,8 @@ const Bot = ({ isPopup = false, onClose }) => {
     showButtons && (
       <div className="category-buttons">
         {categories.map(({ label, msg }) => (
-          <button key={label} onClick={() => handleCategoryClick(msg)}>
+          <button key={label} onClick={() => handleCategoryClick(msg)} 
+            >
             <span>{label}</span>
           </button>
         ))}
@@ -116,7 +126,7 @@ const Bot = ({ isPopup = false, onClose }) => {
     //main content that display to user
   const content = (
     <div className="msg-window">
-      <Header />
+      <Header  web_data={web_data}/>
       <div className="chat-window">
         {/* call render msg funct */}
         {renderMessages()}  
@@ -137,7 +147,7 @@ const Bot = ({ isPopup = false, onClose }) => {
             onKeyDown={(e) => e.key === 'Enter' && handleSend()}
           />
           {query && (
-            <button className="send-btn" onClick={() => handleSend()}>
+            <button className="send-btn" onClick={() => handleSend()} >
               <i className="bi bi-arrow-up-circle"></i>
             </button>
           )}
@@ -151,7 +161,7 @@ const Bot = ({ isPopup = false, onClose }) => {
     <div className="popup-box">
       <div className="popup-header">
         <span>Ask Questions</span>
-        <button className="popup-close" onClick={onClose}>
+        <button className="popup-close" onClick={onClose} >
           &times;
         </button>
       </div>
