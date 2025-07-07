@@ -29,6 +29,7 @@ const initialErrors = {
 const Complain = ({ isPopup = false, onClose, web_data }) => {
   const navigate = useNavigate();
   const [image, setImage] = useState(null);
+  const [closeBtnShow, setcloseBtnShow] = useState(true)
   const [formData, setFormData] = useState({
     order_id: '',
     mobile_number: '',
@@ -138,12 +139,18 @@ const Complain = ({ isPopup = false, onClose, web_data }) => {
   // ————— Reusable UI Content —————
   const content = (
     <div className="complain">
-      <Header web_data={web_data} />
+      <Header web_data={web_data}  closeBtnShow={closeBtnShow} onClose={onClose} />
+        {/* <h2>Add Complaint</h2> */}
+      <div className="complainHeader">
+         <h3>Add Complaint</h3>
+      </div>
       <div className="ComplainBody">
         <form onSubmit={onSubmitHandler} className="complain-form">
 
           <div className="input-group">
-            <p>Order ID <span className="star">*</span></p>
+            <p>Order ID
+               {/* <span className="star">*</span> */}
+               </p>
             <input
               type="text"
               name="order_id"
@@ -156,7 +163,9 @@ const Complain = ({ isPopup = false, onClose, web_data }) => {
           </div>
 
           <div className="input-group">
-            <p>Mobile Number <span className="star">*</span></p>
+            <p>Mobile Number
+               {/* <span className="star">*</span> */}
+               </p>
             <input
               type="tel"
               name="mobile_number"
@@ -180,9 +189,27 @@ const Complain = ({ isPopup = false, onClose, web_data }) => {
             />
             {errors.email && <span className="error-msg">{errors.email}</span>}
           </div>
-
+           <div className="addImg">
+  <p>Attach file (optional)</p>
+  <div className="file-input-container">
+    <label htmlFor="image" className="file-input-label">Choose file</label>
+    <span className="file-name">No file chosen</span>
+    <input
+      id="image"
+      type="file"
+      accept=".pdf,.png,.jpg,.jpeg"
+      hidden
+      onChange={handleFile}
+    />
+  </div>
+  {errors.attachment && (
+    <span className="error-msg">{errors.attachment}</span>
+  )}
+</div>
           <div className="input-group">
-            <p>Message <span className="star">*</span></p>
+            <p>Message 
+              {/* <span className="star">*</span> */}
+              </p>
             <textarea
               name="message"
               value={formData.message}
@@ -193,44 +220,26 @@ const Complain = ({ isPopup = false, onClose, web_data }) => {
             />
             {errors.message && <span className="error-msg">{errors.message}</span>}
           </div>
-          <div className="addImg">
-            <p>Attachment (PDF, PNG, JPG)</p>
-            <label htmlFor="image">
-              <img
-                src={image ? URL.createObjectURL(image) : uploadArea}
-                alt="Preview"
-                className="preview-img"
-              />
-            </label>
-            <input
-              id="image"
-              type="file"
-              accept=".pdf,.png,.jpg,.jpeg"
-              hidden
-              onChange={handleFile}
-            />
-            {errors.attachment && (
-              <span className="error-msg">{errors.attachment}</span>
-            )}
-          </div>
           <button type="submit" className="submit-btn">
             Submit
           </button>
         </form>
       </div>
-      <Footer web_data={web_data} />
+      {/* <Footer web_data={web_data} /> */}
     </div>
   );
 
+  // return content
   // ————— Conditional Popup Wrapper —————
   if (!isPopup) return content;
 
   return (
+
     <div className="popup-box">
-      <div className="popup-header">
+      {/* <div className="popup-header">
         <span>Submit Complaint</span>
         <button className="popup-close" onClick={onClose}>&times;</button>
-      </div>
+      </div> */}
       {content}
     </div>
   );

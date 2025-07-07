@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import "../styles/footer.css";
-
+import footerImg from '../assets/footerimg.png'
 const Footer = ({ web_data }) => {
 
   useEffect(() => {
@@ -14,8 +14,9 @@ const Footer = ({ web_data }) => {
   return (
     <>
       <div className="display-message">
-        <span>{web_data.discription}</span>
-        {/* <span>Welcome to <span className="title">TAPSHOP</span> Customer Service!!</span> */}
+        <div className="img"><img src={footerImg} alt="" /></div>
+        {/* <span>{web_data.discription}</span> */}
+        <span>Welcome to the <span className="title">TAPSHOP</span> Customer Service!!</span>
       </div>
     </>
   );

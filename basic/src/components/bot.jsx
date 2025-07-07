@@ -14,7 +14,7 @@ const categories = [
   { label: 'Availability', msg: 'Suggest all possible questions/categories about availability and ask to select question/category like enter 1 for this ,2 for that and so on, and start with greeting' },
   { label: 'Redemption Help', msg: 'Suggest all possible questions/categories about Redemption Help and ask to select question/category like enter 1 for this ,2 for that and so on, and start with greeting' },
   { label: 'Payment Methods', msg: 'Which payment methods are accepted?' },
-  { label: 'Complain or Issue', msg: 'Suggest all possible questions/categories about Complain or issue and ask to select question/category like enter 1 for this ,2 for that and so on, and start with greeting' },
+  { label: 'Complain', msg: 'Suggest all possible questions/categories about Complain or issue and ask to select question/category like enter 1 for this ,2 for that and so on, and start with greeting' },
   { label: 'Ask Help', msg: 'Print only a welcome msg to user' }
 ];
 
@@ -26,6 +26,8 @@ const Bot = ({ isPopup = false, onClose, website  , web_data }) => {
   const [sessionId] = useState(() => Date.now().toString());
   const [allowInput, setAllowInput] = useState(false);
   const [showButtons, setShowButtons] = useState(true);
+  
+    const [closeBtnShow, setcloseBtnShow] = useState(true)
 
   useEffect(() => {
   if (web_data) {
@@ -112,6 +114,10 @@ const Bot = ({ isPopup = false, onClose, website  , web_data }) => {
     //render category buttons eg. pricing etc
   const renderButtons = () =>
     showButtons && (
+   <>
+   <div className="msg">
+    <span>How may I assist you today?</span>
+   </div>
       <div className="category-buttons">
         {categories.map(({ label, msg }) => (
           <button key={label} onClick={() => handleCategoryClick(msg)} 
@@ -120,13 +126,14 @@ const Bot = ({ isPopup = false, onClose, website  , web_data }) => {
           </button>
         ))}
       </div>
+      </>
     );
 
 
     //main content that display to user
   const content = (
     <div className="msg-window">
-      <Header  web_data={web_data}/>
+      <Header web_data={web_data}  closeBtnShow={closeBtnShow} onClose={onClose} />
       <div className="chat-window">
         {/* call render msg funct */}
         {renderMessages()}  
@@ -159,12 +166,12 @@ const Bot = ({ isPopup = false, onClose, website  , web_data }) => {
   //if not popup then show content else show neche wala div
   return !isPopup ? content : (
     <div className="popup-box">
-      <div className="popup-header">
+      {/* <div className="popup-header">
         <span>Ask Questions</span>
         <button className="popup-close" onClick={onClose} >
           &times;
         </button>
-      </div>
+      </div> */}
       {content}
     </div>
   );

@@ -1,40 +1,22 @@
 /* Floating launcher button */
 
 :root {
-  --bot-bg: #3a8d3a;       /* green */
-  --bot-body: #2e7d32;     /*black*/
-  --bot-accent: #ffffff;   /* white*/
+  --bot-bg: #66C37B;       /* green */
+  --bot-body: #0D0D0D;     /*black*/
+  --bot-accent: #1F1F1F;
+  /* white*/
 }
 
 
 
-/* .chat-launcher {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: rgb(60, 138, 60);
-  color: #fff;
-  font-size: 24px;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  z-index: 9998;
-} */
-
 /* Popup box */
 .popup-box {
   position: fixed;
-  bottom: 24px;          /* leave space for launcher */
-  /* right: 1rem; */
-     height: 36rem;
+     bottom: 16px;
+    right: 66px;
+     height: 33rem;
   background: var(--bot-accent);
-  border-radius: 12px;
+  border-radius: 0 0 1.6rem 1.6rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   z-index: 9999;
   display: flex;
@@ -55,8 +37,8 @@
 
 .popup-close {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 31px;
+  left: 13px;
   background: none;
   border: none;
   font-size: 1.8rem;
@@ -71,4 +53,31 @@
 .popup-box .widget {
   flex: 1;
   overflow-y: auto;
+}
+
+
+.chat-launcher {
+  position: fixed;
+  bottom: 1px;
+  right: 4px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: transparent;
+  /* color: #fff; */
+  font-size: 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  z-index: 9998;
+}
+.chat-launcher img{
+    width: 55px;
+  background-color: var(--bot-bg);
+  color: var(--bot-bg);
+  
+  border-radius: 50%;
 }

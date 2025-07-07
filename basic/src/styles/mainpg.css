@@ -1,39 +1,37 @@
 :root {
-  --bot-bg: #ffffff;
-  --bot-body: #3c8a3c;
-  --bot-accent: #000000;
+  --bot-bg: #66C37B;       /* green */
+  --bot-body: #0D0D0D;     /*black*/
+  --bot-accent: #1F1F1F;
+  /* white*/
 }
 
-/* body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: var(--bot-bg);
-  color: var(--bot-accent);
-} */
 
 .widget {
-  margin: 6px;
+  margin: 5px;
   width: 23rem;
   height: 32rem;
-  border-radius: 1.5rem;
-  padding: 0.5rem;
-  background-color: var(--bot-bg);
+  border-radius: 1.6rem;
+  /* padding: 0.5rem; */
+  background-color: var(--bot-body);
   color: var(--bot-accent);
 }
 
 .chat-body {
-  background: var(--bot-body);
-  margin-top: 2px;
-  padding: 0.5rem;
-  height: 63%;
-  border-radius: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+background: var(--bot-body);
+    margin-top: 11rem;
+    /* margin-bottom: 5px; */
+    top: 2rem;
+    padding: 0.5rem;
+    height: 25%;
+    /* border-radius: 1.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .chat-body .btn {
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -41,55 +39,25 @@
   width: 100%;
 }
 
-/* Button styling */
 .chat-body button {
   position: relative;
   overflow: hidden;
-  width: 10rem;
+  width: 18rem;
   height: 3rem;
   margin: 10px;
   font-size: large;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.chat-body .complain-btn button{
+  background-color: var(--bot-bg);
   border: none;
-  cursor: pointer;  
-  background-color: var(--bot-bg);   /* green */
-  color: var(--bot-accent);
-  transition: background 0.3s, color 0.3s;
 }
 
-/* Slide-in white hover effect */
-.chat-body button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: var(--bot-accent);
-  transition: left 0.3s ease;
-  z-index: 0;
+.chat-body .question-btn button{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
 }
 
-.chat-body button:hover::before {
-  left: 0;
-}
-
-
-.chat-body button span {
-  position: relative;
-  z-index: 1;
-   color: var(--bot-accent);
-  transition: color 0.3s ease;
-}
-
-.chat-body button:hover span {
-  color: var(--bot-bg);
-}
-
-
-/* Optional loading and unavailable states */
-.bot-loading, .bot-not-available {
-  text-align: center;
-  padding: 1rem;
-  color: var(--bot-accent);
-}
