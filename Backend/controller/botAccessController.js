@@ -96,9 +96,9 @@ async function handleAddWebsite(req, res) {
 
 
 async function handleUpdateData(req, res) {
-  const licenseKey = req.params.licenseKey;
+  const website = req.params.website;
 
-  const result = await botModel.findOne({ where: { license_key: licenseKey } })
+  const result = await botModel.findOne({ where: { websiteName: website } })
   if (!result) {
     return res.status(400).json({ error: 'website not found!' });
   }
