@@ -2,7 +2,7 @@ const Joi = require('joi');
 
 // Helper to detect <script> tags
 const noScript = (value, helpers) => {
-  if (/<script.*?>.*?<\/script>/gi.test(value)) {
+  if (/<[^>]*>|script/gi.test(value)) {
     return helpers.message('Field must not contain <script> tags');
   }
   return value;

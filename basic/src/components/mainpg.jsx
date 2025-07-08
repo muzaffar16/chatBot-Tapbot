@@ -11,11 +11,15 @@ import boticon from '../assets/boticon.png'
 const API = import.meta.env.VITE_API_URL;
 
 const Mainpg = ({ isPopup = true, onClose }) => {
-  const { website } = useParams();
+  const { licenseKey } = useParams();
   const [showComplain, setShowComplain] = useState(false);
   const [showBot, setShowBot] = useState(false);
   const [showChat, setShowChat] = useState(false);
   const [validSite, setValidSite] = useState(null); // null = loading
+  const [isInternet, setisInternet] = useState(true);
+
+  //stop running api call two time
+  const [isLoading, setIsLoading] = useState(false);
 
   const [web_data, setweb_data] = useState({
     websiteName: '',
@@ -26,58 +30,65 @@ const Mainpg = ({ isPopup = true, onClose }) => {
     discription: ''
   });
 
-  useEffect(() => {
-    fetch(`${API}/bot/check/${website}`)
-      .then(res => res.json())
-      .then(data => {
-        setValidSite(data.valid);
-        setweb_data(data.result);
+useEffect(() => {
+  
+    if (isLoading) return; // Prevent multiple simultaneous requests    
+    setIsLoading(true);
+  console.log(licenseKey)
+  fetch(`${API}/bot/check/${licenseKey}`)
+    .then(res => res.json())
+    .then(data => {
+      setValidSite(data.valid || false);
+      setisInternet(data.isGemini ?? false);
+      setweb_data(data.result);
 
-        // Set theme from fetched result
-        const result = data.result || {};
+      // If theme data is available, set CSS variables
+      const result = data.result;
+      if (result.bg_color_code)
         document.documentElement.style.setProperty('--bot-bg', result.bg_color_code);
+      if (result.color_code)
         document.documentElement.style.setProperty('--bot-body', result.color_code);
+      if (result.font_color)
         document.documentElement.style.setProperty('--bot-accent', result.font_color);
-      })
-      .catch(() => setValidSite(false));
-  }, [website]);
+    })
+    .catch(() => {
+      setValidSite(false);
+      setisInternet(false);
+    });
+}, [licenseKey]);
+
+
+
 
   const widget = (
     <div className="widget">
       <Header web_data={web_data} />
-      <Footer web_data={web_data} />
-      <div className="chat-body">
-        <div className="complain-btn">
-          <button onClick={() => setShowComplain(true)}>
-            <span>Add Complain</span>
-          </button>
+      <Footer web_data={web_data} isInternet={isInternet} />
+
+      {isInternet && (
+        <div className="chat-body">
+
+          <div className="complain-btn">
+            <button onClick={() => setShowComplain(true)}>
+              <span>Add Complain</span>
+            </button>
+          </div>
+          <div className="question-btn">
+            <button className='white' onClick={() => setShowBot(true)}>
+              <span>Ask Questions</span>
+            </button>
+          </div>
         </div>
-        <div className="question-btn">
-          <button className='white' onClick={() => setShowBot(true)}>
-            <span>Ask Questions</span>
-          </button>
-        </div>
-      </div>
+      )}
     </div>
   );
 
-  const botUnavailable = (
-    <div className="bot-not-available">
-      <h2>Bot is currently not available for this website.</h2>
-    </div>
-  );
-
-  const loading = (
-    <div className="bot-loading">
-      <p>🔄 Checking bot availability...</p>
-    </div>
-  );
 
   // If full widget is being used (not embedded), handle popup logic
   if (!isPopup) {
     return (
       <>
-        {validSite && !showChat && !showComplain && !showBot && (
+        {validSite && (
           <button
             className="chat-launcher"
             onClick={() => setShowChat(true)}>
@@ -87,13 +98,9 @@ const Mainpg = ({ isPopup = true, onClose }) => {
 
           </button>
         )}
-        {validSite && showChat && !showComplain && !showBot && (
+        {validSite && showChat && (
           <div >
-            <div className="popup-box">
-              {/* <div className="popup-header" style={{ backgroundColor: web_data.color_code, color: web_data.font_color }}>
-                <span>Customer Service</span>
-                <button className="popup-close" onClick={() => setShowChat(false)}>&times;</button>
-              </div> */}
+            <div className="popup-box animated-popup">
               {widget}
             </div>
             <button
@@ -114,7 +121,21 @@ const Mainpg = ({ isPopup = true, onClose }) => {
           <Complain isPopup onClose={() => setShowComplain(false)} web_data={web_data} />
         )}
         {validSite && showBot && (
-          <Bot isPopup onClose={() => setShowBot(false)} website={website} web_data={web_data} />
+          <Bot isPopup onClose={() => setShowBot(false)} web_data={web_data} />
+        )}
+        {validSite && (showComplain || showBot || showChat) && (
+          <div>
+            <button
+              className="chat-launcher"
+              onClick={() => {
+                setShowChat(false);
+                setShowBot(false);
+                setShowComplain(false);
+              }}
+            >
+              <img src={boticon} alt="Close all tabs" />
+            </button>
+          </div>
         )}
 
       </>

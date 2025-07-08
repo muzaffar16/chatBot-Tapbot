@@ -1,15 +1,18 @@
+
+
 const validate = (schema) => (req, res, next) => {
-  const { error } = schema.validate(req.body, { abortEarly: false });
-
-  if (error) {
-    const errors = error.details.map((err) => ({
-      field: err.context.key,
-      message: err.message,
-    }));
-    return res.status(400).json({ errors });
+  try {
+    const {error} = schema.validate(req.body);
+    if(error){
+      // console.log(error)
+      return res.status(200).json(error.details[0].message)
+    }
+    next();
+  } catch (error) {
+    // Handle validation errors. You can customize this based on your needs.
+    res.status(400).json({ error: error.errors }); // Example: sending a 400 error with validation errors.
   }
-
-  next();
 };
-
+    
+  
 module.exports = validate;

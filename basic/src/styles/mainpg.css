@@ -61,3 +61,15 @@ background: var(--bot-body);
   color: white;
 }
 
+.noInternet{
+   height: 10%;
+    background-color: var(--bot-body);
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-top: 2px;
+    text-align: center;
+}
+

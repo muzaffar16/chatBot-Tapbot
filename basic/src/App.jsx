@@ -11,7 +11,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/:website" element={<Mainpg isPopup={false} />} />
+        <Route path="/:licenseKey" element={<Mainpg isPopup={false} />} />
         <Route path="/bot" element={<Bot isPopup={false} />} />
         <Route path="/complain" element={<Complain isPopup={false} />} />
       </Routes>

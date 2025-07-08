@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const upload = require('../middleware/upload'); // updated to use memoryStorage
-const { handleAddWebsite,handleUpdateData, handleIsWebsiteExisit } = require('../controller/botAccessController');
+const { handleAddWebsite,handleUpdateData, handleIsWebsiteExist } = require('../controller/botAccessController');
 
 
 router.post(
@@ -19,6 +19,6 @@ router.post('/update/:website',
     { name: 'prompt', maxCount: 1 }
   ]),handleUpdateData)
 
-router.get('/check/:website',handleIsWebsiteExisit)
+router.get('/check/:licenseKey',handleIsWebsiteExist)
 
 module.exports = router;

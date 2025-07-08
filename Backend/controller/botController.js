@@ -1,30 +1,15 @@
-const redis = require('../redisClient');
+// const redis = require('../redisClient');
 const fetch = require('node-fetch');
-const fs = require('fs/promises');
-const path = require('path');
 const { buildPrompt } = require('../info/builtPrompt');
 const { botModel } = require('../model/botModel');
 require('dotenv').config();
 
+const RedisService = require('../helper/redisClass')
+const redis = new RedisService();
+
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
 
 
-// let KB_TEXT = redis.get(`site:${website}:info`);
-// fs.readFile(path.join(__dirname, '../info/productinfo.json'), 'utf8')
-//   .then(text => {
-//     KB_TEXT = text;
-//     console.log('Knowledge base loaded ');
-//   })
-//   .catch(err => {
-//     console.error('Failed to load KB :', err);
-//   });
-
-// let promptText=redis.get(`site:${website}:prompt`);
-//   fs.readFile(path.join( __dirname,'../info/prompt.txt'), 'utf8')
-//    .then(text => {
-//    promptText =  text
-//   console.log('prompt loaded ');
-// })
 
 async function getData(website) {
   const result = await botModel.findOne({ where: { websiteName: website } })
@@ -38,16 +23,19 @@ async function HandleGeminiResponce(req, res) {
   const { message, sessionId = 'anon' } = req.body;
   const website = req.params.website;
 
+  const result = getData(website)
+  if (!result) {
+    console.log("result")
+    return res.status(404).json({ reply: 'Bot is currently not available for this website.' });
+  }
+
   //get prompt and info form redix
+
   let KB_TEXT = await redis.get(`site:${website}:info`);
   let promptText = await redis.get(`site:${website}:prompt`);
 
-  const result = getData(website)
+  // const result = getData(website)
 
-  if (!result) {
-    console.log("result")
-   return res.status(404).json({ reply: '⚠️ Bot is currently not available for this website.' });
-  }
 
   // write expire logic here
 

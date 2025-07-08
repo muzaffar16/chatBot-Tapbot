@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import "../styles/footer.css";
 import footerImg from '../assets/footerimg.png'
-const Footer = ({ web_data }) => {
+const Footer = ({ web_data ,isInternet}) => {
 
   useEffect(() => {
     if (web_data) {
@@ -16,7 +16,12 @@ const Footer = ({ web_data }) => {
       <div className="display-message">
         <div className="img"><img src={footerImg} alt="" /></div>
         {/* <span>{web_data.discription}</span> */}
-        <span>Welcome to the <span className="title">TAPSHOP</span> Customer Service!!</span>
+        {!isInternet &&(
+          <span >No Internet Connection</span>
+        )}
+        {isInternet &&(
+          <span>Welcome to the <span className="title">{web_data.websiteName}</span> Customer Service!!</span>
+        )}
       </div>
     </>
   );

@@ -27,6 +27,10 @@ const botModel = sequelize.define('botAccess', {
     type: DataTypes.STRING,
     allowNull: false
   },
+  status: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
   bg_color_code: {
     type: DataTypes.STRING,
     allowNull: false

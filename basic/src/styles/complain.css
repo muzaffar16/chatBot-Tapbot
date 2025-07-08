@@ -110,7 +110,7 @@
   border-radius: 0.4rem;
   border: 1px solid #333;
   background-color: #222;
-  color: var(--bot-accent);
+  color: white;
   width: 100%;
   box-sizing: border-box;
   font-size: 0.9rem;
@@ -214,3 +214,47 @@
   padding-left: 1rem;
   height: 2rem;
 }
+
+
+.submit {
+    border-radius: 8px;
+    width: 100%;
+    margin: 16px 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.submit-bot-icon {
+  width: 100%;
+  height: 40%;
+  flex-shrink: 0;
+}
+
+.submit-bot-icon img {
+  width: 100%;
+  height: 10rem;
+  object-fit: contain;
+}
+
+.submit-msg {
+      margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 18px;
+    color: white;
+    font-size: 17px;
+}
+
+.submit-msg span{
+  width: 67%;
+  padding: 0 60px 0 60px;
+
+}
+/* .submit-msg span:first-child {
+  font-weight: 600;
+}
+
+.submit-msg span:last-child {
+  color: #666;
+} */

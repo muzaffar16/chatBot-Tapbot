@@ -19,7 +19,7 @@ const Header = ({ web_data , closeBtnShow, onClose}) => {
     <div className="chat-header">
       {closeBtnShow &&(
          <div className="closeBtn">
-              <button className="popup-close" onClick={onClose}><i class="bi bi-arrow-left-short"></i></button>
+              <button className="popup-close" onClick={onClose}><i className="bi bi-arrow-left-short"></i></button>
       </div>
       )}
       <div className="logo">
