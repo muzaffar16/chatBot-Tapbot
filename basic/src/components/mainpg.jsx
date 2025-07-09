@@ -39,7 +39,7 @@ useEffect(() => {
     .then(res => res.json())
     .then(data => {
       setValidSite(data.valid || false);
-      setisInternet(data.isGemini ?? false);
+      // setisInternet(data.isGemini ?? false);
       setweb_data(data.result);
 
       // If theme data is available, set CSS variables
@@ -95,7 +95,8 @@ useEffect(() => {
 
             {/* <i className="bi bi-robot"></i> */}
             <img src={boticon} alt="" />
-
+            {/* <img src="https://d34080pnh6e62j.cloudfront.net/images/VideoOnDemandThumb/1752050613tapBot-logo.png" alt="" /> */}
+            
           </button>
         )}
         {validSite && showChat && (
@@ -107,6 +108,7 @@ useEffect(() => {
               className="chat-launcher"
               onClick={() => setShowChat(false)}>
               {/* <i className="bi bi-robot"></i> */}
+              {/* <img src="https://d34080pnh6e62j.cloudfront.net/images/VideoOnDemandThumb/1752050613tapBot-logo.png" alt="" /> */}
               <img src={boticon} alt="" />
 
             </button>
@@ -133,6 +135,7 @@ useEffect(() => {
                 setShowComplain(false);
               }}
             >
+              {/* <img src="https://d34080pnh6e62j.cloudfront.net/images/VideoOnDemandThumb/1752050613tapBot-logo.png" alt="" /> */}
               <img src={boticon} alt="Close all tabs" />
             </button>
           </div>

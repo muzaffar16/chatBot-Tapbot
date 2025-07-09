@@ -150,7 +150,8 @@ const Complain = ({ isPopup = false, onClose, web_data }) => {
       {isSubmitScreen && (
             <div className="submit">
           <div className="submit-bot-icon">
-            <img src={boticon} alt="" />
+            <img src="https://d34080pnh6e62j.cloudfront.net/images/VideoOnDemandThumb/1752050599tapBot-thankYou.png" alt="" />
+            {/* <img src={boticon} alt="" /> */}
           </div>
           <div className="submit-msg">
             <span>Your query has been submitted</span>

@@ -10,9 +10,10 @@
 .msg-window {
   margin: 5px;
   width: 23rem;
-  height: 33rem;
-  border-radius: 1.6rem;
-
+  height: -webkit-fill-available;
+  /* border-radius: 1.54rem; */
+  /* height: 32rem; */
+  border-radius: 0 0 1.54rem 1.54rem;
   background-color: var(--bot-body);
   color: var(--bot-accent);
   display: flex;
@@ -25,7 +26,7 @@
   /* margin-top: 10px; */
   padding: 0.75rem;
   /* height: 16rem; */
-  border-radius: 1.25rem;
+  border-radius: 0 0 1.6rem 1.6rem;
   flex: 1;
   overflow-y: auto;
   background: var(--bot-body);
@@ -76,14 +77,14 @@
 }
 
 .input-border {
-  height: 5rem;
+  height: 5.5rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   background-color: var(--bot-body);
   border-top: 2px solid var(--bot-accent);
   position: relative;
-  bottom: 10px;
+  /* bottom: 10px; */
   border-radius: 0 0 1.6rem 1.6rem;
 }
 
@@ -152,7 +153,7 @@
   display: flex;
   gap: 9px;
   align-self: flex-start;
-  max-width: 80%;
+  max-width: 92%;
   margin-bottom: 12px;
 }
 
@@ -211,7 +212,7 @@
 .category-buttons button {
   position: relative;
   overflow: hidden;
-  width: 10rem;
+  width: 9rem;
   height: 2.5rem;
   margin: 5px;
   font-size: medium;
@@ -242,6 +243,8 @@
 .msg span {
   /* width: 100%; */
   color: white;
+  font-weight: 400;
+  font-size: larger;
 }
 
 .msg {
@@ -252,20 +255,47 @@
 }
 
 .botIcon {
-  /* width: 60px; */
-  height: 60px;
+  width: 101px;
+  height: 36px;
+  align-items: center;
   border-radius: 50%;
-  background: transparent;
+  /* background: transparent; */
+  background-color: var(--bot-bg);
 }
 
 .botIcon img {
-  width: 46px;
-  height: 46px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background-color: var(--bot-bg);
+  background: none;
+  /* background-color: var(--bot-bg); */
   color: var(--bot-bg);
 }
 
 
 /* --------------- */
 
+@media (min-width: 400px) and (max-width: 767px) {
+  .msg-window {
+    width: 97%;
+  }
+
+  .msg {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .user-input {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 399px) {
+  .category-buttons button {
+    width: 8rem;
+  }
+
+  .user-input {
+    width: 17rem;
+  }
+}

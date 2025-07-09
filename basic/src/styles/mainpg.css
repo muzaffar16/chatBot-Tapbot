@@ -7,13 +7,13 @@
 
 
 .widget {
-  margin: 5px;
-  width: 23rem;
-  height: 32rem;
-  border-radius: 1.6rem;
-  /* padding: 0.5rem; */
-  background-color: var(--bot-body);
-  color: var(--bot-accent);
+    margin: 5px;
+    width: 23rem;
+    height: 32rem;
+    border-radius: 0 0 1.6rem 1.6rem;
+    /* padding: 0.5rem; */
+    background-color: var(--bot-body);
+     /* color: var(--bot-accent); */
 }
 
 .chat-body {
@@ -48,6 +48,7 @@ background: var(--bot-body);
   font-size: large;
   border-radius: 10px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .chat-body .complain-btn button{
@@ -76,3 +77,8 @@ background: var(--bot-body);
 
 
 
+@media (min-width: 400px) and (max-width: 767px) {
+  .widget{
+    width: 97%;
+  }
+}

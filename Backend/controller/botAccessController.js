@@ -5,9 +5,9 @@ const fetch = require('node-fetch');
 const RedisService = require('../helper/redisClass')
 const Redis = new RedisService();
 
-require('dotenv').config();
+// require('dotenv').config();
 
-const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
+// const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
 
 // async function handleAddWebsite(req, res) {
 //   const { websiteName } = req.body;
@@ -143,7 +143,7 @@ async function handleIsWebsiteExist(req, res) {
     if (!result) {
       return res.status(404).json({
         valid: false,
-        isGemini: false,
+        // isGemini: false,
         message: "Website not found in database"
       });
     }
@@ -161,44 +161,50 @@ site_exp_date.setHours(0, 0, 0, 0);
 if ((site_exp_date <= today_date)  || (status == 0)) {
   return res.status(200).json({
     valid: false,
-    isGemini: false,
+    // isGemini: false,
     result,
     message: "Your license is expired!  or Status = 0"
   });
 }
+ return res.status(200).json({
+    valid: true,
+    // isGemini: false,
+    result,
+    message: "license is activate"
+  });
 
     // Step 2: Check Gemini API (fast check using HEAD)
 
-    try {
+    // try {
 
-      const response = await fetch(GEMINI_API_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: 'are you alive' }] }],
-        }),
-      });
+    //   const response = await fetch(GEMINI_API_URL, {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({
+    //       contents: [{ parts: [{ text: 'are you alive' }] }],
+    //     }),
+    //   });
 
-      const { candidates = [] } = await response.json();
-      // console.log(candidates)
-      if (candidates && candidates.length>0) {
-        return res.status(200).json({
-          valid: true,
-          isGemini: true,
-          result,
-          message: "website exists and Gemini API is working"
-        })
-      }
+    //   const { candidates = [] } = await response.json();
+    //   // console.log(candidates)
+    //   if (candidates && candidates.length>0) {
+    //     return res.status(200).json({
+    //       valid: true,
+    //       // isGemini: true,
+    //       result,
+    //       message: "website exists and Gemini API is working"
+    //     })
+    //   }
       
-    } catch (err) {
+    // } catch (err) {
 
-      return res.status(503).json({
-        valid: true,
-        isGemini: false,
-        result,
-        message: "Website exists but Gemini API check failed"
-      });
-    }
+    //   return res.status(503).json({
+    //     valid: true,
+    //     // isGemini: false,
+    //     result,
+    //     message: "Website exists but Gemini API check failed"
+    //   });
+    // }
 
   } catch (err) {
     console.error('Error checking website:', err);

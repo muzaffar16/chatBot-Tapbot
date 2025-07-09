@@ -19,7 +19,7 @@ const fileFilter = (_req, file, cb) => {
   }
 };
 
-// Multer config with file size limit (e.g., 2MB)
+// Multer config with file size limit 
 const upload = multer({
   storage,
   fileFilter,

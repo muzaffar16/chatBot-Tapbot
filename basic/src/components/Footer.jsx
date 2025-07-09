@@ -14,6 +14,7 @@ const Footer = ({ web_data ,isInternet}) => {
   return (
     <>
       <div className="display-message">
+         {/* <div className="img"><img src='https://d34080pnh6e62j.cloudfront.net/images/VideoOnDemandThumb/1752050514tapBot-green.png' alt="" /></div> */}
         <div className="img"><img src={footerImg} alt="" /></div>
         {/* <span>{web_data.discription}</span> */}
         {!isInternet &&(

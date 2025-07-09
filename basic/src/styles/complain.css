@@ -9,7 +9,7 @@
    margin: 5px;
   width: 23rem;
   height: 33rem;
-  border-radius: 1.6rem;
+  border-radius:0 0 1.6rem 1.6rem;
   /* padding: 0.5rem; */
   background-color: var(--bot-body);
   color: var(--bot-accent);
@@ -227,16 +227,17 @@
   width: 100%;
   height: 40%;
   flex-shrink: 0;
+      padding-top: 2rem;
 }
 
 .submit-bot-icon img {
   width: 100%;
-  height: 10rem;
+  height: 7rem;
   object-fit: contain;
 }
 
 .submit-msg {
-      margin-top: 3rem;
+      margin-top: 2rem;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -260,6 +261,10 @@
 } */
 
 
-
+@media (min-width: 400px) and (max-width: 767px) {
+  .complain{
+    width: 97%;
+  }
+}
 
 

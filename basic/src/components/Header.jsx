@@ -28,7 +28,7 @@ const Header = ({ web_data , closeBtnShow, onClose}) => {
       </div>
       <div className="TapShop-logo">
         {/* <img src={tapShopIcon} alt="TapShop Logo" /> */}
-        <img src={web_data.logo_url} style={{ width: '100px', height: 'auto', marginBottom: '10px' }} alt="TapShop Logo" />
+        <img src={web_data.logo_url} style={{ width: '100px', height: 'auto'}} alt="TapShop Logo" />
       </div>
     </div>
   )
