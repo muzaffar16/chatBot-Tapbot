@@ -1,1 +1,1 @@
-export const URL="https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAk51oBuCpPgBEGVpuS274dZL6oyyB47ng"
+
