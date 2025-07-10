@@ -1,4 +1,4 @@
-const redis = require('../redisClient');
+const Redis = require("../Redis/redis.js");
 
 const WINDOW_SECONDS = 60; // 1 minute
 const MAX_REQUESTS = 5;
@@ -10,11 +10,11 @@ const mobileRateLimiter = async (req, res, next) => {
   }
 
   const key = `rate:${mobile}`;
-    const cnt = await redis.incr(key);
-
+    const cnt = await Redis.increaseIPHitCount(key);
+    //  console.log(cnt)
     if (cnt === 1) {
       // Set expiry when first request is made
-      await redis.expire(key, WINDOW_SECONDS);
+      await Redis.setCacheWithExpiry(key, cnt);
     }
 
     if (cnt > MAX_REQUESTS) {

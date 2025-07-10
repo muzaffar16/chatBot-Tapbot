@@ -1,14 +1,16 @@
 const express= require ('express')
 const cors = require ('cors');
 
-const {complainModel} = require ('./model/complainModel.js')
-const {botModel}= require ('./model/botModel.js')
+const {complainModel} = require ('./Model/complainModel.js')
+const {botModel}= require ('./Model/botModel.js')
 
-const botRoute = require ('./routes/botRoute.js')
-const complainRoute = require('./routes/complainRoute.js')
-const botAccessRoute=require('./routes/botAccessRoute.js')
+// const botRoute = require ('./routes/botRoute.js')
+// const complainRoute = require('./routes/complainRoute.js')
+// const botAccessRoute=require('./routes/botAccessRoute.js')
 
-require('dotenv').config();
+const tapbotRoute = require ('./routes/tapbotRoute.js')
+
+// require('dotenv').config();
 
 const app = express();
 // Allow CORS for all origins or specific domains
@@ -33,14 +35,12 @@ app.use((req, res, next) => {
 
 
 // ─────────Routes────────────────────────────────────────────────
-app.use("/chat",botRoute)
-app.use("/complain",complainRoute)
-app.use("/website",botAccessRoute)
-app.use('/bot',botAccessRoute); //check is website exisit
+app.use("/",tapbotRoute)
+
 
 
 complainModel.sync({force: false}) 
-botModel.sync({alter: true}) 
+botModel.sync({force: false}) 
 
 const PORT = process.env.PORT || 8000;
 

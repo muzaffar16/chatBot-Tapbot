@@ -1,8 +1,9 @@
-const { sequelize } = require('../connetion');
+const { sequelize } = require('../config/db');
 const { DataTypes } = require('sequelize');
 
 
 const complainModel = sequelize.define(
+  
   'complains',
   {
     id:            { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true },
@@ -18,7 +19,8 @@ const complainModel = sequelize.define(
   },
   {
     freezeTableName: true,
-    timestamps: false
+    timestamps: false,
+    logging: false
   }
 );
 

@@ -1,4 +1,4 @@
-const { sequelize } = require('../connetion');
+const { sequelize } = require('../config/db');
 const { DataTypes } = require('sequelize');
 
 const botModel = sequelize.define('botAccess', {
@@ -45,7 +45,8 @@ const botModel = sequelize.define('botAccess', {
   }
 }, {
   freezeTableName: true,
-  timestamps: false
+  timestamps: false,
+  logging: false
 });
 
 module.exports = { botModel };

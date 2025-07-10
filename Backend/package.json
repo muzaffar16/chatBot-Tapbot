@@ -4,7 +4,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon --env-file=.env index.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "mysql2": "^3.14.1",
     "node-fetch": "^2.7.0",
     "nodemon": "^3.1.10",
+    "redis": "^5.6.0",
     "sequelize": "^6.37.7"
   }
 }

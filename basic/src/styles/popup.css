@@ -26,11 +26,11 @@
 /* Popup box */
 .popup-box {
   position: fixed;
+  /* inset: auto 1rem 1rem; */
   bottom: 36px;
-  right: 79px;
-    /* height: 33rem; */
-  width: 90vw;
-  height: 70vh;
+    width: 24rem;
+    height: 36rem;
+    right: 100px;
   background: var(--bot-accent);
   border-radius: 0 0 1.6rem 1.6rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
@@ -108,20 +108,6 @@
   color: var(--bot-bg);
 }
 
-/* Pulsating animation */
-/* @keyframes pulse {
-  0% {
-    box-shadow: 0 0 5px 2px var(--bot-bg);
-  }
-  50% {
-    box-shadow: 0 0 15px 7px var(--bot-bg);
-  }
-  100% {
-    box-shadow: 0 0 5px 2px var(--bot-bg);
-  }
-} */
-
-
 
 
 
@@ -148,9 +134,9 @@
   }
 
 
- 
 
-@media (min-width: 360px) and (max-width: 400px) {
+
+/* @media (max-width: 400px) {
   .popup-box {
         width: 65%;
         bottom: 100px;
@@ -159,8 +145,8 @@
 }
 
 
-/* Medium Phones (400px-767px) */
-@media (min-width: 400px) and (max-width: 767px) {
+
+@media (max-width: 767px) {
   .popup-box {
     width: 69%;
     height: 84%;
@@ -169,19 +155,19 @@
   }
 }
 
-/* Tablets (768px-1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+
+@media (max-width: 1023px) {
   .popup-box {
     width: 25rem;
     height: 33rem;
     bottom: 36px;
     right: 79px;
-    transform: none; /* Reset transform */
+    transform: none; 
     border-radius: 0 0 1.6rem 1.6rem;
   }
 }
 
-/* Desktops (1024px+) */
+
 @media (min-width: 1024px) {
   .popup-box {
     width: 28rem;
@@ -190,7 +176,7 @@
   }
 }
 
-/* Debugging Tip: Add this temporarily */
+
 body::before {
   content: "Mobile (Default)";
   position: fixed;
@@ -223,9 +209,4 @@ body::before {
 }
 
 
-
-
-
-
-
-
+ */
