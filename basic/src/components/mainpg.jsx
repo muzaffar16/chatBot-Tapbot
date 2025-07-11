@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Complain from './complain';
-import Bot from './Bot';
+import Bot from './bot';
 import '../styles/mainpg.css';
 import '../styles/popup.css';
 import { useParams } from 'react-router-dom';
