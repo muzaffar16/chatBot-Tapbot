@@ -4,13 +4,9 @@ const cors = require ('cors');
 const {complainModel} = require ('./Model/complainModel.js')
 const {botModel}= require ('./Model/botModel.js')
 
-// const botRoute = require ('./routes/botRoute.js')
-// const complainRoute = require('./routes/complainRoute.js')
-// const botAccessRoute=require('./routes/botAccessRoute.js')
 
 const tapbotRoute = require ('./routes/tapbotRoute.js')
 
-// require('dotenv').config();
 
 const app = express();
 // Allow CORS for all origins or specific domains
@@ -36,7 +32,6 @@ app.use((req, res, next) => {
 
 // ─────────Routes────────────────────────────────────────────────
 app.use("/",tapbotRoute)
-
 
 
 complainModel.sync({force: false}) 
